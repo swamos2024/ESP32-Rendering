@@ -65,6 +65,8 @@ struct FaceData2D
 #pragma endregion 
 
 #pragma region Vertex Math Operations
+    float Distance(Vertex2D a, Vertex2D b);
+
     Shape2D ShapeTransform2D(Shape2D Shape, float Angle, Vertex2D Translate, Vertex2D Scale);
 
     FaceData2D FaceDataTransform2D(FaceData2D Shape, float Angle, Vertex2D Translate, Vertex2D Scale);

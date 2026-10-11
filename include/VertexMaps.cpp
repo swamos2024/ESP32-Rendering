@@ -27,6 +27,12 @@
 
 #pragma region Vertex Math Operations
 
+    inline float Distance(Vertex2D a, Vertex2D b){
+       float x = (a[0] - b[0]);
+       float y = (a[1] - b[1]);
+       return std::sqrt( x*x + y*y );
+    }
+
     Shape2D ShapeTransform2D(Shape2D Shape, float Angle, Vertex2D Translate, Vertex2D Scale){
         Shape.Angle = Angle;
         Shape.Translate = Translate;
